@@ -1,6 +1,6 @@
 # SNES Mask ROM to 27C322 (Extended)
 
-Order at your own risk. Untested.
+Order at your own risk. Untested. Design is intended for personal use only, not for modifying existing cartridges for commercial sale.
 
 Instructions: https://mousebitelabs.com/2020/01/28/27c322-27c160-to-snes-mask-rom-extended-adapter-board/
 
