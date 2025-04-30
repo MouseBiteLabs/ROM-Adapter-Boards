@@ -1,6 +1,8 @@
 # SNES Mask ROM to 27C322 (Extended)
 
-Order at your own risk. Untested. Design is intended for personal use only, not for modifying existing cartridges for commercial sale.
+Order at your own risk. Untested. 
+
+**Design is intended for personal use only, not for modifying existing cartridges for commercial sale.** I really would rather you *not* use these adapter boards to repurpose old carts into rarer games or ROM hacks in order to sell them commercially. Use a brand new cart circuit board instead! I have plenty to choose from :)
 
 Instructions: https://mousebitelabs.com/2020/01/28/27c322-27c160-to-snes-mask-rom-extended-adapter-board/
 
