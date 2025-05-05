@@ -4,13 +4,13 @@ Order at your own risk. Untested.
 
 **Design is intended for personal use only, not for modifying existing cartridges for commercial sale.** I really would rather you *not* use these adapter boards to repurpose old carts into rarer games or ROM hacks in order to sell them commercially. Use a brand new cart circuit board instead! I have plenty to choose from :)
 
-Instructions: https://mousebitelabs.com/2019/09/03/27c322-to-snes-mask-rom-adapter-board/
+Instructions: https://mousebitelabs.com/2020/01/28/27c322-27c160-to-snes-mask-rom-extended-adapter-board/
 
-OSH Park: https://oshpark.com/shared_projects/fE9ns4Cl (sorry it's expensive but tariffs ain't making these any cheaper from overseas)
+OSH Park: https://oshpark.com/shared_projects/zfUtl7pN (sorry it's expensive but tariffs ain't making these any cheaper from overseas)
 
-![image](https://github.com/user-attachments/assets/b18b9e5f-be4a-4b31-a31f-fa40b8c96974)
+![image](https://github.com/user-attachments/assets/0ac06929-fcbd-4a66-a4d8-f67244abb27e)
 
-![image](https://github.com/user-attachments/assets/d7642d76-b1ba-4ea1-9464-0a2122e35761)
+![image](https://github.com/user-attachments/assets/490c7f90-8a45-448b-83d7-8371159ad785)
 
 ## License
 
