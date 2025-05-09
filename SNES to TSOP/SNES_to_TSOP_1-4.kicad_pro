@@ -117,7 +117,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
+        "min_clearance": 0.1524,
         "min_connection": 0.175,
         "min_copper_edge_clearance": 0.29,
         "min_hole_clearance": 0.2,
@@ -445,7 +445,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "snes_to_tsop_1_4.kicad_pro",
+    "filename": "SNES_to_TSOP_1-4.kicad_pro",
     "version": 1
   },
   "net_settings": {
