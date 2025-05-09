@@ -6,7 +6,7 @@ Order at your own risk. Untested.
 
 Instructions coming eventually.
 
-OSH Park: https://oshpark.com/shared_projects/f02TGqzu
+OSH Park: https://oshpark.com/shared_projects/ZvoKSwja
 
 ![image](https://github.com/user-attachments/assets/e3e41465-150b-48e1-b731-0d86074a814a)
 
