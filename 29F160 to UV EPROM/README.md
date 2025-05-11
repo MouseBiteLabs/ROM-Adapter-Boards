@@ -2,9 +2,13 @@
 
 Order at your own risk. Untested. 
 
-**Design is intended for personal use only, not for modifying existing cartridges for commercial sale.** I really would rather you *not* use these adapter boards to repurpose old carts into rarer games or ROM hacks in order to sell them commercially. Use a brand new cart circuit board instead! I have plenty to choose from :)
+This board is used to recreate the UV EPROMs 27C160 and 27C322 with brand new 29F160 EEPROMs. Include 1x 29F160 and bridge JP1 with solder to emulate a 27C160, or use 2x 29F160 and populate U4 for a 27C322.
 
-OSH Park: 
+The databus is controlled by JP2, for 8 bit mode or 16 bit mode. This means you can have a 27C322 act in 8 bit mode - something the original chip did not support.
+
+OSH Park: https://oshpark.com/shared_projects/lg6k4Vlu
+
+29F160: https://www.mouser.com/ProductDetail/Alliance-Memory/M29F160FT55N3E2?qs=vmHwEFxEFR%252BPKObcaS0Aqw%3D%3D
 
 ![image](https://github.com/user-attachments/assets/af5b365d-119c-40c2-83f9-eae786539461)
 
