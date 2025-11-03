@@ -47,9 +47,9 @@ Bridge this solder pad if you are only using one 29F160 chip to replicate a 27C1
 
 This is a special three-way jumper that sets the mode for the databus output. These sets of pads configures the 29F160's /BYTE pin, which tells the chip to output data in an 8-bit bus or a 16-bit bus. The 27C160 had the same pin feature (as pin 32) but the 27C322 was forced to output a 16-bit bus. Solder the middle-right pad to either the top, bottom, or left according to the following criteria:
 
-- Solder to the bottom to force the data output to be a 16-bit bus. This is how the 27C322 operates natively, and one of the modes the 27C160 can operate in. If you are using two 29F160 chips, then soldering to the bottom pad will produce a perfect drop-in replacement for the 27C322.
+- Solder to the bottom to force the data output to be a 16-bit bus. This is how the 27C322 operates natively, and one of the modes the 27C160 can operate in. If you are using two 29F160 chips, then soldering to the bottom pad will produce a drop-in replacement for the 27C322.
 - Solder to the top to force the data output to be an 8-bit bus. The 27C160 can output an 8-bit bus, but the 27C322 was never able to!
-- Solder to the left to replicate the 27C160 *exactly* to act as a perfect drop-in replacement. This is ONLY if you are replicating the 27C160, NOT the 27C322. Soldering to the left will connect the 29F160's /BYTE pin to the through-hole pin 32, which is where the 27C160's /BYTE pin is located. **Do not solder to the left if you are using two 29F160 chips! Pin 32 is the top address pin for switching between the two chips, so it is already in use.**
+- Solder to the left to replicate the 27C160 as a drop-in replacement. This is ONLY if you are replicating the 27C160, NOT the 27C322. Soldering to the left will connect the 29F160's /BYTE pin to the through-hole pin 32, which is where the 27C160's /BYTE pin is located. **Do not solder to the left if you are using two 29F160 chips! Pin 32 is the top address pin for switching between the two chips, so it is already in use.**
 
 ![image](https://github.com/user-attachments/assets/ddf0554a-106c-4249-8d38-faf8b28501d8)
 
