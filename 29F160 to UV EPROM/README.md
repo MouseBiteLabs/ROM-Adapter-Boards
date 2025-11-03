@@ -6,15 +6,17 @@ This board is used to recreate the UV EPROMs 27C160 and 27C322 with brand new 29
 
 The databus is controlled by JP2, for 8 bit mode or 16 bit mode. This means you can have a 27C322 act in 8 bit mode - something the original chip did not support.
 
-Version 1.2 added /WE pads via JP3. The right-side pad is connected to the /WE pins of the two ROM chips, the left-side pad is connected to VCC. You can wire the /WE pad to an external point to attempt programming the 29F160 on the adapter board. Otherwise, short JP3 with a solder pad.
+Version 1.2 added /WE pads via JP3. The right-side pad is connected to the /WE pins of the two ROM chips, the left-side pad is connected to VCC. You can wire the /WE pad to an external point to attempt programming the 29F160 on the adapter board. Otherwise, short JP3 with solder.
 
-OSH Park: https://oshpark.com/shared_projects/Rcthkw3s
+Version 2.0 added /WE and /RP holes on the left side, with pull-up resistors near the top ROM chip. This prevents the need for shorting the pads, and provides a stronger connection for wires from /WE and /RP for programming.
+
+OSH Park: https://oshpark.com/shared_projects/V4uznOwT
 
 29F160: https://www.mouser.com/ProductDetail/Alliance-Memory/M29F160FT55N3E2?qs=vmHwEFxEFR%252BPKObcaS0Aqw%3D%3D
 
-![image](https://github.com/user-attachments/assets/e3de07ee-5d22-4e2a-9c12-4dd214c6794f)
+![image](https://github.com/user-attachments/assets/925b8f41-b223-4731-a35a-ac4e0c8b8ba7)
 
-![image](https://github.com/user-attachments/assets/2a68fc93-3039-46de-8df6-94263e047fad)
+![image](https://github.com/user-attachments/assets/bc70df83-e80e-4e00-baab-a9591a2f0baa)
 
 ## License
 
