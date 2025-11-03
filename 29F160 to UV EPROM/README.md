@@ -1,6 +1,6 @@
 # 29F160 to UV ERPOM Adapter
 
-Order at your own risk. Untested. 
+# DO NOT ORDER YET
 
 This board is used to recreate the old UV EPROMs 27C160 and 27C322 with brand new 29F160 EEPROMs. The UV EPROMs are typically only available to purchase used from places like AliExpress and eBay, and are known to arrive damaged or completely inoperable. The 29F160, however, is brand new NOR Flash manufactured by Alliance, for purchase at major electronics distributors.
 
@@ -8,9 +8,9 @@ This board is used to recreate the old UV EPROMs 27C160 and 27C322 with brand ne
 
 With one of these chips, you can make a replacement for the 27C160. With two, you can make a replacement for the 27C322. In fact, with the 29F160's /BYTE pin, you can even make an 8-bit bus version of the 27C322 which was only ever a feature of the 27C160.
 
-![image](https://github.com/user-attachments/assets/954b940d-0a45-4f4b-99c2-4b875b1730a6)
+![image](https://github.com/user-attachments/assets/20e56d36-2fac-449b-8f22-b2d9e5f8c3cd)
 
-![image](https://github.com/user-attachments/assets/23a340bb-c400-4fa0-b1ad-69484037571b)
+![image](https://github.com/user-attachments/assets/4f8b704c-3088-4c6f-96a9-738bbcb155cb)
 
 All gerbers and source files can be found in this repo, as this project is fully open source. Please read all instructions associated with this board before assembling.
 
@@ -18,7 +18,7 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 The zipped folder contains all the gerber files for this board. You can generally choose whatever thickness you want, but I usually stick to at least 1.0mm. The surface finish can also be whatever you want, but I find ENIG easier to solder the small-pitch parts, personally. Also note that this is a four-layer board.
 
-You can order this board on OSH Park, which is a great option if you only need a small quantity: https://oshpark.com/shared_projects/wLgfzHj1
+You can order this board on OSH Park, which is a great option if you only need a small quantity: [https://oshpark.com/shared_projects/3acZR1bq](https://oshpark.com/shared_projects/3acZR1bq)
 
 Alternatively, you can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (NOT YET AVAILABLE) (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
 
@@ -43,19 +43,23 @@ Most of the configurations are self-explanatory or are described on the back of 
 
 Bridge this solder pad if you are only using one 29F160 chip to replicate a 27C160. Note that this pad is located underneath U4 - meaning you **should not solder JP1 if you have U4 on the board**. U4 is required if you are using two 29F160 chips.
 
-### JP2 - The Byte Mode Jumper
+### R2 - The Byte Mode Resistor
 
-This is a special three-way jumper that sets the mode for the databus output. These sets of pads configures the 29F160's /BYTE pin, which tells the chip to output data in an 8-bit bus or a 16-bit bus. The 27C160 had the same pin feature (as pin 32) but the 27C322 was forced to output a 16-bit bus. Solder the middle-right pad to either the top, bottom, or left according to the following criteria:
+This is a special three-way set of pads that sets the mode for the databus output. These sets of pads configures the 29F160's /BYTE pin, which tells the chip to output data in an 8-bit bus or a 16-bit bus. The 27C160 had the same pin feature (as pin 32) but the 27C322 was forced to output a 16-bit bus. The /BYTE pin(s) on U2 and U3 are connected to the middle-right pad. Solder a resistor between the top or bottom set of pads, or directly connect this pad to the left (labeled "P32") according to the following criteria:
 
-- Solder to the bottom to force the data output to be a 16-bit bus. This is how the 27C322 operates natively, and one of the modes the 27C160 can operate in. If you are using two 29F160 chips, then soldering to the bottom pad will produce a drop-in replacement for the 27C322.
-- Solder to the top to force the data output to be an 8-bit bus. The 27C160 can output an 8-bit bus, but the 27C322 was never able to!
-- Solder to the left to replicate the 27C160 as a drop-in replacement. This is ONLY if you are replicating the 27C160, NOT the 27C322. Soldering to the left will connect the 29F160's /BYTE pin to the through-hole pin 32, which is where the 27C160's /BYTE pin is located. **Do not solder to the left if you are using two 29F160 chips! Pin 32 is the top address pin for switching between the two chips, so it is already in use.**
+- Solder the resistor R2 to the bottom footprint to force the data output to be a 16-bit bus. This is how the 27C322 operates natively, and one of the modes the 27C160 can operate in. If you are using two 29F160 chips, then soldering to the bottom pad will produce a drop-in replacement for the 27C322.
+- Solder the resistor R2 to the top footprint to force the data output to be an 8-bit bus. The 27C160 can output an 8-bit bus, but the 27C322 was never able to!
+- Directly solder to the left (or use a zero-ohm resistor) to replicate the 27C160 as a drop-in replacement. This is ONLY if you are replicating the 27C160, NOT the 27C322. Soldering to the left will connect the 29F160's /BYTE pin to the through-hole pin 32, which is where the 27C160's /BYTE pin is located. **Do not solder to the left if you are using two 29F160 chips! Pin 32 in this case is the top address pin for switching between the two chips, so it is already in use!**
+
+[TO DO: new picture]
 
 ![image](https://github.com/user-attachments/assets/ddf0554a-106c-4249-8d38-faf8b28501d8)
 
-## The /WE and /RP pins
+## The /WE, /RP, and /BYTE Holes
 
-R1 and R2 are pull-up resistors for /WE and /RP. When in normal operation, these two pins need to be pulled to VCC to operate properly. The pins on the left side of the board are for easy access for potential on-board programming (these are used by the aformentioned <a href="https://github.com/MouseBiteLabs/29F160-to-UV-EPROM-T48-Programming-Adapter/">29F160 to UV EPROM Programmming Adapter for the T48</a>. If you are using this adapter board on one of my cartridges, there may be support for in-circuit programming through these pins. See the repository for the cartridge in question for more information.
+R1 and R3 are pull-up resistors for /WE and /RP pins on the 29F160s. When in normal operation, these two pins need to be pulled to VCC to operate properly. The /BYTE pin, as described in the section above, needs to be pulled to VCC or GND through R2 (or controlled through pin 32 elsewhere on the main board this is connecting to). The /BYTE pin is connected to the hole on the right side, also labeled /BYTE.
+
+These holes are for easy access for potential on-board programming (these are used by the aformentioned <a href="https://github.com/MouseBiteLabs/29F160-to-UV-EPROM-T48-Programming-Adapter/">29F160 to UV EPROM Programmming Adapter for the T48</a>). If you are using this adapter board on one of my cartridges, there may be support for in-circuit programming through these pins. See the repository for the cartridge in question for more information.
 
 ## Bill of Materials (BOM): 27C160 (16 Mbit or 2 MB)
 
@@ -63,8 +67,11 @@ R1 and R2 are pull-up resistors for /WE and /RP. When in normal operation, these
 | --------- | ----------------- | ------- | ---------------- | ------------------------------------------------ |
 | C1        | 0.1uF             | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | R1        | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
-| R2        | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
+| R2 (NOTE) | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
+| R3        | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
 | U2        | M29F160           | TSOP-48 | Flash EEPROM     | https://mou.sr/3HIjb09                           |
+
+NOTE: As described above, R2 is zero ohms (or a short circuit) to the P32 pad if you are using this board as a drop-in replacement for 27C160.
 
 ## Bill of Materials (BOM): 27C322 (32 Mbit or 4 MB)
 
@@ -74,6 +81,7 @@ R1 and R2 are pull-up resistors for /WE and /RP. When in normal operation, these
 | C2        | 0.1uF             | 0603     | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | R1        | 100k              | 0603     | Resistor         | https://mou.sr/49bgMnu                           |
 | R2        | 100k              | 0603     | Resistor         | https://mou.sr/49bgMnu                           |
+| R3        | 100k              | 0603     | Resistor         | https://mou.sr/49bgMnu                           |
 | U2        | M29F160           | TSOP-48  | Flash EEPROM     | https://mou.sr/3HIjb09                           |
 | U3        | M29F160           | TSOP-48  | Flash EEPROM     | https://mou.sr/3HIjb09                           |
 | U4        | 74HCT139          | TSSOP-16 | Decoder          | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
@@ -82,8 +90,8 @@ R1 and R2 are pull-up resistors for /WE and /RP. When in normal operation, these
 
 ### v2.0 - Release II
 
-- Added /WE and /RP holes for a stronger connection for external programming.
-- Added R1 and R2 pull-up resistors to remove the need for soldering/desoldering solder jumpers for switching between programming and operational modes.
+- Added /WE, /RP, and /BYTE holes for a stronger connection for external programming.
+- Added R1 and R3 pull-up resistors to remove the need for soldering/desoldering solder jumpers for switching between programming and operational modes.
   
 ### v1.2 - Release I
 
