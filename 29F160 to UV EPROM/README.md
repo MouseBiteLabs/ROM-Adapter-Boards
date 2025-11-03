@@ -1,6 +1,6 @@
 # 29F160 to UV ERPOM Adapter
 
-This board is used to recreate the old UV EPROMs 27C160 and 27C322 with brand new 29F160 EEPROMs. The UV EPROMs are typically only available to purchase used from places like AliExpress and eBay, and are known to ocassionally arrive damaged or completely inoperable. The 29F160, however, is brand new NOR Flash manufactured by Alliance, for purchase at major electronics distributors.
+This board is used to recreate the old UV EPROMs 27C160 and 27C322 with brand new 29F160 EEPROMs. The UV EPROMs are typically only available to purchase used from places like AliExpress and eBay, and are known to occasionally arrive damaged or completely inoperable. The 29F160, however, is brand new NOR Flash manufactured by Alliance, for purchase at major electronics distributors.
 
 <a href="https://mou.sr/3HIjb09">Here is a link to the component on Mouser.</a>
 
