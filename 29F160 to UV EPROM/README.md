@@ -41,7 +41,7 @@ Most of the configurations are self-explanatory or are described on the back of 
 
 ### JP1 - 27C160 Mode Jumper
 
-Bridge this solder pad if you are only using one 29F160 chip to replicate a 27C160.
+Bridge this solder pad if you are only using one 29F160 chip to replicate a 27C160. Note that this pad is located underneath U4 - meaning you **should not solder JP1 if you have U4 on the board**. U4 is required if you are using two 29F160 chips.
 
 ### JP2 - The Byte Mode Jumper
 
