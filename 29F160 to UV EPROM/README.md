@@ -55,7 +55,7 @@ This is a special three-way jumper that sets the mode for the databus output. Th
 
 ## The /WE and /RP pins
 
-R1 and R2 are pull-up resistors for /WE and /RP. When in normal operation, these two pins need to be pulled to VCC to operate properly. The pins on the left side of the board are for easy access for potential on-board programming (these are used by the aformentioned <a href="https://github.com/MouseBiteLabs/29F160-to-UV-EPROM-T48-Programming-Adapter/"></a>29F160 to UV EPROM Programmming Adapter for the T48</a>. If you are using this adapter board on one of my cartridges, there may be support for in-circuit programming through these pins. See the repository for the cartridge in question for more information.
+R1 and R2 are pull-up resistors for /WE and /RP. When in normal operation, these two pins need to be pulled to VCC to operate properly. The pins on the left side of the board are for easy access for potential on-board programming (these are used by the aformentioned <a href="https://github.com/MouseBiteLabs/29F160-to-UV-EPROM-T48-Programming-Adapter/">29F160 to UV EPROM Programmming Adapter for the T48</a>. If you are using this adapter board on one of my cartridges, there may be support for in-circuit programming through these pins. See the repository for the cartridge in question for more information.
 
 ## Bill of Materials (BOM): 27C160 (16 Mbit or 2 MB)
 
