@@ -1,7 +1,5 @@
 # 29F160 to UV ERPOM Adapter
 
-# DO NOT ORDER YET
-
 This board is used to recreate the old UV EPROMs 27C160 and 27C322 with brand new 29F160 EEPROMs. The UV EPROMs are typically only available to purchase used from places like AliExpress and eBay, and are known to arrive damaged or completely inoperable. The 29F160, however, is brand new NOR Flash manufactured by Alliance, for purchase at major electronics distributors.
 
 <a href="https://mou.sr/3HIjb09">Here is a link to the component on Mouser.</a>
@@ -20,7 +18,7 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 The zipped folder contains all the gerber files for this board. You can generally choose whatever thickness you want, but I usually stick to at least 1.0mm. The surface finish can also be whatever you want, but I find ENIG easier to solder the small-pitch parts, personally. Also note that this is a four-layer board.
 
-You can order this board on OSH Park, which is a great option if you only need a small quantity: [to do]
+You can order this board on OSH Park, which is a great option if you only need a small quantity: [https://oshpark.com/shared_projects/efulo1p1](https://oshpark.com/shared_projects/efulo1p1)
 
 Alternatively, you can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (NOT YET AVAILABLE) (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
 
@@ -53,9 +51,9 @@ This is a special three-way set of pads that sets the mode for the databus outpu
 - Solder the resistor R2 to the top footprint to force the data output to be an 8-bit bus. The 27C160 can output an 8-bit bus, but the 27C322 was never able to!
 - Directly solder to the left (or use a zero-ohm resistor) to replicate the 27C160 as a drop-in replacement. This is ONLY if you are replicating the 27C160, NOT the 27C322. Soldering to the left will connect the 29F160's /BYTE pin to the through-hole pin 32, which is where the 27C160's /BYTE pin is located. **Do not solder to the left if you are using two 29F160 chips! Pin 32 in this case is the top address pin for switching between the two chips, so it is already in use!**
 
-[TO DO: new picture]
+![image](https://github.com/user-attachments/assets/75c433b0-c6e0-4bbc-b3d3-aa28d2527907)
 
-![image](https://github.com/user-attachments/assets/ddf0554a-106c-4249-8d38-faf8b28501d8)
+NOTE: Instead of a solder blob for P32 connection, a zero-ohm resistor may be used instead. **Do not use any resistance value other than zero ohms for R2 if connecting to P32.**
 
 ## The /WE, /RP, and /BYTE Holes
 
@@ -69,7 +67,8 @@ These holes are for easy access for potential on-board programming (these are us
 | --------- | ----------------- | ------- | ---------------- | ------------------------------------------------ |
 | C1        | 0.1uF             | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | R1        | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
-| R2 (NOTE) | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
+| R2 (*NOTE)| 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
+| R2 (*NOTE)| Zero ohms         | 0603    | Resistor (Jumper)| https://mou.sr/4e1ABQg                           |
 | R3        | 100k              | 0603    | Resistor         | https://mou.sr/49bgMnu                           |
 | U2        | M29F160           | TSOP-48 | Flash EEPROM     | https://mou.sr/3HIjb09                           |
 
@@ -93,7 +92,7 @@ NOTE: As described above, R2 is zero ohms (or a short circuit) to the P32 pad if
 ### v2.0 - Release II
 
 - Added /WE, /RP, and /BYTE holes for a stronger connection for external programming.
-- Added R1 and R3 pull-up resistors to remove the need for soldering/desoldering solder jumpers for switching between programming and operational modes.
+- Added R1, R2, and R3 pull-up resistors to remove the need for soldering/desoldering solder jumpers for switching between programming and operational modes.
   
 ### v1.2 - Release I
 
