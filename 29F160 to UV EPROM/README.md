@@ -8,9 +8,11 @@ This board is used to recreate the old UV EPROMs 27C160 and 27C322 with brand ne
 
 With one of these chips, you can make a replacement for the 27C160. With two, you can make a replacement for the 27C322. In fact, with the 29F160's /BYTE pin, you can even make an 8-bit bus version of the 27C322 which was only ever a feature of the 27C160.
 
-![image](https://github.com/user-attachments/assets/20e56d36-2fac-449b-8f22-b2d9e5f8c3cd)
+*(In this image, the board is set up as a drop-in replacement for the 27C322)*
 
-![image](https://github.com/user-attachments/assets/4f8b704c-3088-4c6f-96a9-738bbcb155cb)
+![image](https://github.com/user-attachments/assets/2938e994-de65-4a35-92f7-fe86e3cb61f1)
+
+![image](https://github.com/user-attachments/assets/67cc29a2-b8ba-4756-b27d-b051b361b8ca)
 
 All gerbers and source files can be found in this repo, as this project is fully open source. Please read all instructions associated with this board before assembling.
 
@@ -18,7 +20,7 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 The zipped folder contains all the gerber files for this board. You can generally choose whatever thickness you want, but I usually stick to at least 1.0mm. The surface finish can also be whatever you want, but I find ENIG easier to solder the small-pitch parts, personally. Also note that this is a four-layer board.
 
-You can order this board on OSH Park, which is a great option if you only need a small quantity: [https://oshpark.com/shared_projects/3acZR1bq](https://oshpark.com/shared_projects/3acZR1bq)
+You can order this board on OSH Park, which is a great option if you only need a small quantity: [to do]
 
 Alternatively, you can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (NOT YET AVAILABLE) (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
 
