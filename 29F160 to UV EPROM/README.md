@@ -33,7 +33,9 @@ Alternatively, you can use the zipped folder at any board fabricator you like. Y
 
 To make programming this board easier, I made this mouthful of an adapter board: the <a href="https://github.com/MouseBiteLabs/29F160-to-UV-EPROM-T48-Programming-Adapter/">29F160 to UV EPROM Programmming Adapter for the T48</a>. It is untested (I haven't received them yet) but if it works, it will let you program both of the 29F160 chips on this breakout board without having to desolder them. You **will still need** the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a> because there's a proprietary EEPROM chip on there to communicate with the main programmer, but this makes it easier nonetheless.
 
-[TO DO: add picture of programming adapter]
+Remember: this adapter is untested. I will update this repository after testing it.
+
+<img width="1577" height="1024" alt="510523127-d1044af2-7147-4e0c-a4b0-313e5c86717a" src="https://github.com/user-attachments/assets/db0c1243-d3f4-4004-88ab-d7eb9add944f" />
 
 ## Board Configurations
 
