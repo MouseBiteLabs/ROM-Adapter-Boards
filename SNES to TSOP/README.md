@@ -77,6 +77,15 @@ Finally, if you want to make a larger game with two 29F016 chips, you will need 
 | Bottom TSOP  | 29F016            | TSOP-48 | Flash EEPROM     | AliExpress, eBay                                 |
 | 74'139       | 74HCT139          | SOIC-16 | Decoder          | [https://mou.sr/48Dk8As](https://mou.sr/48Dk8As) |
 
+## "Patching" a Cartridge
+
+Many people have asked if you can use these boards like [Voultar's Super Stacker](https://voultar.com/index.php?route=product/product&product_id=77), where you place these on the back of the original mask ROM without desoldering it. Many people use these for "patching" games with a translation or other hack. These boards *can* be used as such, but please keep in mind you're not actually patching the game, per se, you're disabling the original ROM chip and enabling a new one with the adapter board. You are not restricted to using a version of the game of the donor board you have, you can use any game that is compatible with the SNES board type.
+
+If you want to do this - placing the board on the back of the original ROM chip without removing it - you can do it. It might be tricky, because the pins of the original chip are not very long. Keep these things in mind when installing:
+- Make sure the adapter is still placed in the correct orientation. That means the top TSOP chip (and the decoder, if included) will be sandwiched between the original circuit board and the adapter circuit board.
+- Make sure you have pin 1 lined up with pin 1 of the mask ROM.
+- You still need to cut the /CE pin of the original ROM (pin 24) on the **TOP** of the board, and solder a wire from the cut pin to VCC (pin 36). This will disable the original chip.
+
 ## Revision History
 
 ### v1.4 - Re-release
