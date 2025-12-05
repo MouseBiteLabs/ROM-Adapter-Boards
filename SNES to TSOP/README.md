@@ -12,6 +12,10 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 The zipped folder contains all the gerber files for this board. You can generally choose whatever thickness you want, but I usually stick to at least 1.0mm. The surface finish can also be whatever you want, but I find ENIG easier to solder the small-pitch parts, personally. Also note that this is a four-layer board.
 
+**I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
+
+<a href="https://mousebitelabs.etsy.com/listing/1252691381"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
+
 You can order this board on OSH Park, which is a great option if you only need a small quantity: https://oshpark.com/shared_projects/ZvoKSwja
 
 Alternatively, you can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (NOT YET AVAILABLE) (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
