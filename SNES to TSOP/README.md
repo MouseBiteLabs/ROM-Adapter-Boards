@@ -33,7 +33,13 @@ Coming soon.
 
 ## The /WE Pads
 
-The right side of the pads marked /WE connects to the write enable pin of the TSOP(s). You can run a wire from the right pad to the /WR pin of your cartridge to use in a cart edge programmer (if the chips are supported). If you are not using this capability, then bridge the two pads with solder.
+The right side of the pads marked /WE connects to the write enable pin of the TSOP(s). You can run a wire from the right pad to the /WR pin of your cartridge to use in a cart edge programmer (if the chips are supported). In this picture, the /WR pin from the cart edge (pin 54) is accessed via pin 27 of the SRAM.
+
+![image](https://github.com/user-attachments/assets/1e7ac7bf-867c-4652-b01b-7df0ccc57736)
+
+If you are **not** using this capability, then simply bridge the two pads with solder.
+
+![image](https://github.com/user-attachments/assets/65a4c94c-dfd6-484a-a957-85deddf0dd0a)
 
 ## Board Configuration #1 - 16 Mbit (or 2 MB)
 
