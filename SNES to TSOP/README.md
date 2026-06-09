@@ -61,7 +61,7 @@ If you want to make a game larger than 16 Mbit (up to 32 Mbit) you can use one 2
 
 | Reference | Value/Part Number | Package | Description      | Source                                           |
 | --------- | ----------------- | ------- | ---------------- | ------------------------------------------------ |
-| Top TSOP  | 29F032/29F033     | TSOP-48 | Flash EEPROM     | AliExpress, eBay                                 |
+| Top TSOP  | 29F032/29F033     | TSOP-40 | Flash EEPROM     | AliExpress, eBay                                 |
 
 ## Board Configuration #3 - 32 Mbit (or 4 MB) with 2x 29F016
 
